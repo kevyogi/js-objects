@@ -22,7 +22,7 @@ var books = {
   pages: 200
 };
 
-console.log(books)   
+console.log(books);   
   
 /*
 2.  Declare a variable named `dog` and create the following properties (key-value pairs) to the object:
@@ -39,7 +39,17 @@ console.log(books)
  "My dog `name` is `age` year old and likes to `speak`."
 */ 
 
+var dog = {
+  name: "Sophie",
+  age: 8,
+  vegeterian: true,
+  color: ["brown", "black"],
+  speak: function(){
+    return "bark!";
+  }
+};
 
+console.log("My dog " + dog.name + " is " + dog.age + " years old and likes to " + dog.speak());
 
 //An empty object
 
