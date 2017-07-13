@@ -85,6 +85,14 @@ console.log(kicks.buy());
             - add a property named `contents` and set it to be an empty array.
 */
 
+var plainBox = {
+
+};
+plainBox.color = "purple";
+plainBox.size = 13;
+plainBox.contents = [];
+
+console.log(plainBox);
 
 /*
 5. Declare a variable named `stockCar` and create the following properties (key-value pairs) to the object:
@@ -95,6 +103,13 @@ console.log(kicks.buy());
             - add a key named `passengers` and set it to be an empty array.
 */
 
+var stockCar = {
+  model: "Chevy S10",
+  year: 2011,
+  automaticTransmission: true,
+  driver: null,
+  passengers: []
+}
 
 /*
 
