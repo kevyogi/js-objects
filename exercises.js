@@ -292,6 +292,14 @@ console.log(printObj(sumObjResult));
         plainBoxResult and use `console.log` to inspect your results.
  */
 
+function putInPlainBox(object){
+  for(var i = 0; i < 10; i++){
+    object.contents.push(Math.floor(Math.random() * 20));
+  }
+  return object;
+}
+var plainBoxResult = putInPlainBox(plainBox);
+console.log(plainBoxResult);
 
 /*
 11. Detecting transmission
@@ -303,6 +311,9 @@ console.log(printObj(sumObjResult));
 
     Invoke your function and pass in your stockCar object, store the result to a variable named isAutomaticTransmission and use `console.log` to inspect your results.
  */
+
+//function detectingTransmission(object){
+
 
 
 /*
