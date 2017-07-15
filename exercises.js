@@ -276,7 +276,12 @@ console.log(sumObjResult);
         **create more** objects and invoke your function multiple times.
  */
 
+function printObj(object){
+  object.output = object.a + " + " + object.b + " = " + object.result;
 
+  return object.output;
+}
+console.log(printObj(sumObjResult));
 /*
 10. Putting stuff in `plainBox`
         Declare a function named putInPlainBox and a single parameter which will be an object. Within this function, write a 
