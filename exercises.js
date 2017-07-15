@@ -336,7 +336,12 @@ console.log(isAutomaticTransmission);
       your results. Consider using `plainPerson` as your driver.
  */
 
-
+function addDriver(object, person){
+  object.driver = person;
+  return object;
+}
+var stockCarWithDriver = addDriver(stockCar, "Kevin");
+console.log(stockCarWithDriver);
 /*
     #Final Boss
     The Dev League instructors want to ride your whip!
@@ -369,3 +374,4 @@ console.log(isAutomaticTransmission);
         'Marifel, age 19, is riding dirty!'
         'Victor, age 19, is riding dirty!'
  */
+
