@@ -141,10 +141,10 @@ function buildPerson(person, nameString, age){
   return person;
 
 }
-console.log(buildPerson(plainPerson, "Kevin", 28));
-console.log(plainPerson.name);
-console.log(plainPerson.age);
-
+var completePerson = buildPerson(plainPerson, "Kevin", 28);
+console.log(completePerson);
+console.log(completePerson.name);
+console.log(completePerson.age);
 /*
 7. Display values of objects that are inside an array
    Declare a new variable named `arrayOfObjects` and set it to be [this array of objects
@@ -246,7 +246,19 @@ console.log(printorders(arrayOfObjects));
         to inspect your results.
 */
 
+var sumObj = {
+  a: 7,
+  b: 13,
+  result: undefined
+};
 
+function objectAddition(object){
+  var sum = object.a + object.b;
+  object.result = sum;
+  return object;
+}
+var sumObjResult = objectAddition(sumObj);
+console.log(sumObjResult);
 /*
 9. Print sum function and add as new key-value
    Declare a new function named printObj and a single parameter which will be the object from the challenge just above. 
